@@ -7,6 +7,14 @@ HTTPD_CFG_DIR=$OPENSHIFT_PHP_DIR/configuration/etc/conf.d
 HTTPD_PASSENV_FILE=$HTTPD_CFG_DIR/passenv.conf
 HTTPD_PID_FILE=$OPENSHIFT_PHP_DIR/run/httpd.pid
 
+function wait_for_pid_file {
+   [ -f "$1" ] && return 0
+   for i in {1..20}; do
+     sleep .5
+     [ -f "$1" ] && break;
+   done
+}
+
 function apache() {
     if [ "$1" != "stop" ]; then
       write_httpd_passenv $HTTPD_PASSENV_FILE
