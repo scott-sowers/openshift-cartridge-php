@@ -5,6 +5,7 @@ Display-Name: PHP 5.5
 Description: ! 'PHP is a general-purpose server-side scripting language originally
   designed for Web development to produce dynamic Web pages. Popular development frameworks
   include: CakePHP, Zend, Symfony, and Code Igniter.'
+Source-Url: https://github.com/leoetlino/openshift-cartridge-php.git
 Version: '5.5'
 License: The PHP License, version 3.0
 License-Url: http://www.php.net/license/3_0.txt
