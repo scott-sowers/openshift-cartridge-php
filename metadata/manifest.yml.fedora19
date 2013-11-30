@@ -13,7 +13,6 @@ Vendor: php.net
 Cartridge-Version: 0.0.8
 Compatible-Versions:
 - 0.0.7
-Cartridge-Vendor: redhat
 Categories:
 - service
 - php
